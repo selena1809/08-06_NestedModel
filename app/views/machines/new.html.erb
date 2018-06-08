@@ -1,0 +1,9 @@
+<%= simple_form_for @machine do |m| %>
+     <%= m.input :name%>
+  <%= m.simple_fields_for :parts do |p|%>
+
+    <%= p.input :name%>
+
+  <%end%>
+ <%= link_to "Create New Part", create_new_part_machines_path%>
+<%end%>
